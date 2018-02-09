@@ -1,6 +1,17 @@
-# UM Libraries (/kislak-center) Jekyll site
+# Baseline Theme for Jekyll sites
 
-A Jekyll site for the Kislak Center
+- Bootstrap 4 Source code
+- Material design Source code
+
+## Dependencies
+
+- Homebrew 1.5.3 (https://brew.sh/)
+- Ruby 2.5.0 (https://www.ruby-lang.org/en/downloads/) | check with ruby -v
+- Ruby Gems 2.7.5 (https://rubygems.org/pages/download) | check with gem -v
+- Bundler 1.16.0 | bundle update
+- Jekyll | check with jekyll --version
+- Yarn
+
 
 ## To use this theme template in your project
 
