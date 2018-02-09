@@ -5,12 +5,25 @@
 
 ## Dependencies
 
-- Homebrew 1.5.3 (https://brew.sh/)
-- Ruby 2.5.0 (https://www.ruby-lang.org/en/downloads/) | check with ruby -v
-- Ruby Gems 2.7.5 (https://rubygems.org/pages/download) | check with gem -v
-- Bundler 1.16.0 | bundle update
-- Jekyll | check with jekyll --version
-- Yarn
+- Homebrew 1.5.3 (https://brew.sh/) | brew update  brew -v
+- Ruby 2.5.0 (https://www.ruby-lang.org/en/downloads/) | ruby -v
+- Ruby Gems 2.7.5 (https://rubygems.org/pages/download) | gem -v
+- Bundler 1.16.0 | bundle update  bundle -v
+- NPM 5.6.0 (https://docs.npmjs.com/cli/update) | npm -v   npm update -g
+- Node 9.5.0 (https://nodejs.org/) | node -v
+- Jekyll 3.7.2 | jekyll --version
+- Yarn 1.3.2 (https://yarnpkg.com/lang/en/docs/install/) | yarn --version
+
+## Add Bootstrap source files into project folder
+
+https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
+
+- yarn install
+- yarn add bootstrap@4.0.0
+- yarn add jquery@>=3.0.0
+- yarn add popper.js@^1.12.3
+
+- Adding new Sass load paths
 
 
 ## To use this theme template in your project
