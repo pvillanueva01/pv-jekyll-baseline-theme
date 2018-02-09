@@ -1,0 +1,50 @@
+# Site settings
+title: Kislak Center at the University of Miami
+subtitle: Kislak Center at the University of Miami
+email: webmaster.lib@miami.edu
+description: Kislak Center at the University of Miami - Home of Special Collections and University Archives.
+baseurl: "/kislak-center" # the subpath of your site, e.g. /blog/
+url: "https://library.miami.edu" # the base hostname & protocol for your site
+
+author: University of Miami Libraries
+street_address: 1300 Memorial Drive
+city: Coral Gables
+state: FL
+zip_code: 33124-0320
+country: United States of America
+phone: (305) 284-3233
+year: 2018
+
+# Social settings
+facebook_url: https://www.facebook.com/pages/University-of-Miami-Libraries/16409329419
+instagram_url: https://www.instagram.com/umiamilibraries/
+twitter_url: https://twitter.com/UMiamiLibraries
+
+# Google services
+google_analytics: UA-15217512-5
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+# Localization strings
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Read more"    
+# Post navigation
+  post_navigation: true
+
+# PAGINATION
+paginate: 10
+paginate_path: "page:num"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+future: true
+permalink: none
+
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+gems: [jekyll-paginate]
+

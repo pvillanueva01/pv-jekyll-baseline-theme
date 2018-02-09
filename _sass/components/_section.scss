@@ -1,0 +1,187 @@
+//Logos Section
+
+.logo-sponsors {
+    text-align: center;
+
+    a {
+        border: none;
+    }
+}
+
+.uml-logo {
+    display: inline-block;
+    width: 221px;
+    height: 45px;
+    margin: 0 0 10px 0;
+    padding: 5px; 
+
+    @media(min-width:600px) {
+        margin:0 45px 0 0;
+    }
+
+    @media(min-width:768px) {
+        width: 260px;
+        height: 53px;
+        margin:0 50px 0 0;
+    }
+
+    @media(min-width:992px) {
+        margin:0 80px 0 0;
+    }
+
+}
+
+.lowe-logo {
+    display: inline-block;
+    width: 251px;
+    height: 35px;
+    padding: 0px; 
+    margin: 0;
+
+    @media(min-width:768px) {
+        width: 323px;
+        height: 45px;
+    }
+
+}
+
+// Sections
+
+section {
+    padding: 0 0 25px 0;
+
+    @media(min-width:768px) {
+        padding: 0 0 50px 0;
+    }
+}
+
+.section {
+    padding: 40px 0;
+
+    @media(min-width:768px) {
+        padding: 75px 0;
+    }
+}
+
+.sub-section {
+    padding: 15px 0 5px 0;
+
+    @media(min-width:768px) {
+        padding: 30px 0 10px 0;
+    }
+}
+
+.section-heading {
+    margin: 0;
+}
+
+.service-box {
+    margin: 50px auto 0;
+    
+    @media (min-width: 992px) {
+        margin: 20px auto 0;
+    }
+    
+    p {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin: 0;
+    }
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .img-responsive {
+        width: 100% !important;
+    }
+    
+    .portfolio-box-caption {
+        color: _palette(base);
+        opacity: 0;
+        display: block;
+        background: rgba( _palette(highlight), .8 );
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        
+        @include transition-all;
+        
+        .portfolio-box-caption-content {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            .project-category,
+            .project-name {
+                @include sans-serif-font;
+                padding: 0 15px;
+            }
+            
+            .project-category {
+                font-size: 14px;
+            }
+            
+            .project-name {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: _font(weight-bold);
+            }
+        }
+    }
+    &:hover {
+        .portfolio-box-caption {
+            opacity: 1;
+        }
+    }
+    @media (min-width: 768px) {
+        .portfolio-box-caption {
+            .portfolio-box-caption-content {
+                .project-category {
+                    font-size: 16px;
+                }
+                .project-name {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+/*.call-to-action {
+    h2 {
+        margin: 0 auto 20px;
+    }
+}*/
+
+.feature {
+    background-color: _palette(element-bg);
+    padding: 1em;
+    border-radius: _size(border-radius);
+}
+
+
+.feature-img {
+    margin-bottom: 1em;
+    border: 2px solid _palette(element-bg);
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+
+.maps {width: 100%; min-height: 275px; border: 2px solid _palette(element-bg); margin-bottom: 20px;}
+
+#map > iframe {
+    width: 100% !important;
+}

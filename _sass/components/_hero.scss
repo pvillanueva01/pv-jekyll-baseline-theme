@@ -1,0 +1,94 @@
+// Hero Cover Image
+
+.hero {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('../img/header3.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-top:63px;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+  
+    .section {
+        margin: 10% 0 0 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.4em;
+        line-height: 1.15em;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+        text-transform: uppercase;
+
+        .grand {
+            font-size: 1.9em;
+        }
+    }
+
+    .overlay-text {
+        background-color: rgba(0,0,0,.2);
+        padding: 10px;
+        margin: 10px 0 50px 0;
+        font-size: 22px;
+        font-style: italic;
+        line-height: 22px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+    }         
+
+
+    @media(min-width:600px) {
+        h1 {
+            font-size: 2.25em;
+        }
+    }
+
+    @media(min-width:768px) {
+        margin-top:133px;
+
+        h1 {
+            font-size: 2.5em;
+            line-height: 1em;
+        } 
+
+        .overlay-text {
+            font-size: 24px;      
+            line-height: 24px;
+        }
+    }
+
+    @media(min-width:1024px) {
+        margin-top:119px;
+        padding-bottom: 139px;
+    }
+
+    @media(min-width:1200px) {
+        .overlay-text {
+            font-size: 28px;      
+            line-height: 28px;
+        }
+    }
+}
+
+.navbar-fixed-bottom {
+    position: relative;
+
+    @media(min-width:1024px) {
+        position: fixed;
+    }
+}
+
+.body-sticky-footer {
+    @media(min-width:1024px) {
+        padding-bottom: 139px;
+    }
+    
+}

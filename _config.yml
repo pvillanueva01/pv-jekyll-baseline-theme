@@ -1,0 +1,50 @@
+# Site settings
+title: My Jekyll Project 
+subtitle: Jekyll custom theme
+email: pvillanueva01@gmail.com
+description: Baseline Jekyll theme for site development - bootstrap-material design- 
+baseurl: "/pv-baseline" # the subpath of your site, e.g. /blog/ 
+url: "" # the base hostname & protocol for your site
+
+author: Patricia Villanueva
+street_address: 
+city: Miami
+state: FL
+zip_code: 33124-0320
+country: United States of America
+phone: (305) 284-3233
+year: 2018
+
+# Social settings
+facebook_url: https://www.facebook.com/pages/University-of-Miami-Libraries/16409329419
+instagram_url: https://www.instagram.com/umiamilibraries/
+twitter_url: https://twitter.com/UMiamiLibraries
+
+# Google services
+google_analytics: #UA-15217512-5
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+# Localization strings
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Read more"    
+# Post navigation
+  post_navigation: true
+
+# PAGINATION
+paginate: 5
+paginate_path: "page:num"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+future: true
+permalink: none
+
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+gems: [jekyll-paginate]
+

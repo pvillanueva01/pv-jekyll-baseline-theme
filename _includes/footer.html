@@ -1,0 +1,36 @@
+<footer id="footer">
+    <div class="inner">        
+        <div class="row">
+            <div class="col-sm-2 col-xs-12">
+                <a href="http://welcome.miami.edu/" class="footer-logo"><img src="{{ site.baseurl }}/img/um-logo.png" alt="University of Miami"></a>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p><a href="http://library.miami.edu/" class="footer-link">{{ site.author }}</a><br />
+                {{ site.street_address }}<br />
+                {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
+                {{ site.phone }}
+                </p>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                &nbsp;
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <ul class="icons">                      
+                    {% if site.facebook_url %}
+                    <li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                    {% endif %}
+                    {% if site.twitter_url %}
+                    <li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                    {% endif %} 
+                    {% if site.instagram_url %}
+                    <li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                    {% endif %} 
+                </ul> 
+                <ul class="copyright">
+                    <li>&copy; {{ site.year }} | <a href="http://www.miami.edu/index.php/privacy_statement/" target="_blank">Privacy</a></li>           
+                </ul>          
+            </div>
+        </div>          
+        
+    </div>
+</footer>

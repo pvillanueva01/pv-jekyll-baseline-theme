@@ -1,0 +1,28 @@
+// Staff content and images
+.staff {
+    
+    margin-bottom: 20px;
+
+   .staff-circle {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: _palette(highlight);
+    margin: 0 15px 10px 0;    
+
+        img {
+            width: 100px;
+            height: 100px;
+        }    
+    }
+
+    p {
+        vertical-align: top;
+    } 
+
+    @media(min-width:600px) {
+        .staff-circle, p {
+            display: inline-block;
+        }
+    }
+}

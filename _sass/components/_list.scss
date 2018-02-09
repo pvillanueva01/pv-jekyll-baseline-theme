@@ -1,0 +1,78 @@
+// List
+
+    ol {
+        list-style: decimal;
+        margin: 0 0 _size(element-margin) 0;
+        padding-left: 1.25em;
+
+        li {
+            padding-left: 0.25em;
+        }
+    }
+
+    ul {
+        list-style: disc;
+        margin: 0 0 _size(element-margin) 0;
+        padding-left: 1em;
+
+        li {
+            padding-left: 0.5em;
+        }
+
+        ul {
+            list-style: square;
+            margin: 10px 0;
+        }
+
+        &.alt {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                border-top: solid 1px _palette(border);
+                padding: 0.5em 0;
+
+                &:first-child {
+                    border-top: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        &.icons {
+            cursor: default;
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 0.75em 0;   
+
+            @media (min-width: 768px) {
+                margin: 0;
+                text-align: right;
+            }
+
+            li {
+                display: inline-block;
+                padding: 0 0.75em 0 0;
+
+                @media (min-width: 768px) {
+                    padding: 0 0.5em 0 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        } 
+
+        &.news-listing {
+         list-style: square;
+
+         li {
+            margin: 0 0 0.75em 0;
+
+            a {
+                border: none;
+            }
+         }
+        }       
+    }

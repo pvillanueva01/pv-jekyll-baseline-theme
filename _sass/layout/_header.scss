@@ -1,0 +1,115 @@
+//Page Header
+
+header {
+    &.header-page {
+        text-align: center;
+        color: #fff;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: none;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+
+
+        .header-overlay {
+            background: rgba(0,0,0,0.25);
+            height: 100%;
+        }
+
+        .intro-text {
+            padding-top: 110px;
+            padding-bottom: 50px;
+
+            .intro-heading {
+                text-transform: uppercase;
+
+                h1 {
+                    margin: 0;
+                    font-size: 1.4em;
+                    line-height: 1.15em;
+                    text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+
+                    .grand {
+                        font-size: 1.9em;
+                    }
+                }
+            }
+
+
+            .intro-lead-in {
+                margin-bottom: 20px;
+                margin-top: 10px;
+                font-size: 22px;
+                font-style: italic;
+                line-height: 22px;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+
+                .overlay-text {
+                    background-color: rgba(0,0,0,.2);
+                    padding: 10px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media(min-width:600px) {
+            .intro-text { 
+                margin-bottom: 0; 
+                padding-top: 120px;
+                padding-bottom: 60px;
+
+                .intro-heading {
+                    h1 {
+                        font-size: 2.25em;
+                    }
+                } 
+            }
+        }
+
+        @media(min-width:768px) {
+            height: auto;
+            background-position: center center;
+
+            .intro-text { 
+                padding-top: 225px;
+                padding-bottom: 60px;
+
+                .intro-heading {
+                    h1 {
+                        font-size: 2.5em;
+                        line-height: 1em;
+                    }                
+                }
+
+                .intro-lead-in {
+                    font-size: 24px;      
+                    line-height: 24px;
+                }
+     
+            }
+        }
+
+        @media(min-width:1024px) {            
+            background-position: top center;
+        }
+
+        @media(min-width:1200px) {
+            .intro-text {
+
+                .intro-lead-in {
+                    font-size: 28px;      
+                    line-height: 28px;
+                } 
+            }
+        }
+
+        @media(min-width:2200px) {
+             .intro-text { 
+                padding-top: 250px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
