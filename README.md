@@ -23,7 +23,22 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 - yarn add jquery@>=3.0.0
 - yarn add popper.js@^1.12.3
 
-- Adding new Sass load paths
+- Adding new SASS load paths in config
+
+## Import Bootstrap SCSS files into main.scss
+
+- include overrides in libs/_vars.scss
+
+## Use Jekyll Assets plugin to manage js files and responsive images
+
+https://github.com/envygeeks/jekyll-assets
+https://hashedin.com/5-absolute-must-have-jekyll-plugins-if-you-care-about-performance-and-seo/
+
+
+## Use jekyll-minifier to minimized js files
+
+https://github.com/digitalsparky/jekyll-minifier
+
 
 
 ## To use this theme template in your project

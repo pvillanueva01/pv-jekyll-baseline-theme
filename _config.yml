@@ -2,17 +2,18 @@
 title: My Jekyll Project 
 subtitle: Jekyll custom theme
 email: pvillanueva01@gmail.com
-description: Baseline Jekyll theme for site development - bootstrap-material design- 
+meta_description: Baseline Jekyll theme for site development - bootstrap-material design- 
+meta_keywords: "jekyll, themes" 
 baseurl: "/pv-baseline" # the subpath of your site, e.g. /blog/ 
 url: "" # the base hostname & protocol for your site
 
 author: Patricia Villanueva
-street_address: 
+street_address: 123 Street
 city: Miami
 state: FL
-zip_code: 
+zip_code: 33161
 country: United States of America
-phone: 
+phone: 123-456-7894
 year: 2018
 
 # Social settings
@@ -46,10 +47,37 @@ permalink: none
 sass:
  load_paths:
   - _sass
-  - node_modules/bootstrap/scss
+  - node_modules
  style: compressed
-gems: [jekyll-paginate]
 
+# PLUGINS
+plugins: 
+ - jekyll-paginate
+ - jekyll-minifier
+ - jekyll-assets
+
+# Do NOT INCLUDE inside _site folder
 exclude:
  - node_modules
+ - yarn.lock
+ - package.json
+ - =3.0.0
+
+# Settings for Jekyll Assets Plugin
+assets:
+ compress:
+  css: false
+  js: true
+ cache: default
+ prefix: "/assets"
+ digest: true 
+ sources:
+  - _assets/scripts
+  - node_modules/bootstrap/dist/js
+  - node_modules/jquery/dist
+  - node_modules/popper.js/dist
+
+# Minifify JS files
+jekyll-minifier:
+ compress_javascript: true
 
