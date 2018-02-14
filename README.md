@@ -14,6 +14,7 @@
 - Jekyll 3.7.2 | jekyll --version
 - Yarn 1.3.2 (https://yarnpkg.com/lang/en/docs/install/) | yarn --version
 
+
 ## Add Bootstrap source files into project folder
 
 https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
@@ -25,37 +26,55 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 
 - Adding new SASS load paths in config
 
+
 ## Import Bootstrap SCSS files into main.scss
 
 - include overrides in libs/_vars.scss
 
-## Use Jekyll Assets plugin to manage js files and responsive images
 
-https://github.com/envygeeks/jekyll-assets
-https://hashedin.com/5-absolute-must-have-jekyll-plugins-if-you-care-about-performance-and-seo/
+## Asset Building
+
+https://github.com/tkareine/jekyll-minibundle
+
+- yarn add uglify-js (to include in node_modules)
 
 
-## Use jekyll-minifier to minimized js files
+## Theme includes breadcrumbs
 
-https://github.com/digitalsparky/jekyll-minifier
+https://simpleit.rocks/how-to-create-breadcrumbs-with-hierarchical-categories-in-jekyll/
 
+Use layout "default-breadcrumb", see folder "sub" for example on page/posts usage
+
+
+## Theme uses responsive-images
+
+https://github.com/wildlyinaccurate/jekyll-responsive-image
+
+- Be sure to include imagemagick first: 
+
+brew install imagemagick@6
+brew link imagemagick@6 --force
+
+- Set templates on _includes folder
+- Use responsive_image_block tag with front-matter variables
+- In order for the image to be resized, start with a larger size asset
 
 
 ## To use this theme template in your project
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+- Start by adding your info in '_config.yml' for site/social settings
+- '_layouts/default.html is the starter layout template, site works with nested layouts 
+- Reorder or remove sections in layouts as needed
+- DO NOT change these _includes: analytics, breadcrumbs, head, responsive-image
 
 
-## To apply updates
+## To apply updates or make changes, use own branch
 
-- create a hotfix branch off of Master branch.
+- create a hotfix branch off of Master branch
 - create a new directory in your development environment. Something like myhotfix.local
-- cd into that directory and add the remote branch. Assuming branch is called hotfix
+- cd into that directory and add the remote branch (assuming branch is called hotfix)
 
 `cd myhotfix.local`
-
-`git remote add hotfix https://github.com/UMiamiLibraries/jekyll-kislak-center.git`
 
 - Use SorceTree or command line to pull that branch into the directory.
 - make changes in local enviroment
@@ -64,24 +83,20 @@ https://github.com/digitalsparky/jekyll-minifier
 
 `bundle exec jekyll build`
 
-`bundle exec jekyll serve --incremental`
+`bundle exec jekyll serve --watch`
 
-Go to: http://127.0.0.1:4000/  or http://localhost:4000/ and verify changes.
+Go to: http://127.0.0.1:4000/  or http://localhost:4000/ and verify changes
+
 
 ## Build for production deployment
 
 `bundle exec jekyll build --config=_config_prod.yml`
 
+
 ### Push changes up to git repo
-- Add and commit files to git
 
-`git add .`
+- Add and commit files to git using SorceTree or command line
 
-`git commit -m "details about my changes" `
-
-- push your branch to git
-
-`git push hotfix hotfix`
 
 ### Merge branch with Master branch. 
 
@@ -90,14 +105,12 @@ Go to: http://127.0.0.1:4000/  or http://localhost:4000/ and verify changes.
 
 ## To push to production 
 
-For Jekyll sites we SFTP the _site directory to production.
+For Jekyll sites we SFTP the _site directory to production server.
 
 ** Do not move the files to production unless you have built for production. Meaning if you did not complete this step then do it now:
 
 `bundle exec jekyll build --config=_config_prod.yml`
 
-SSH onto the production server and cd into /usr/local/www/jekyll/kislak-center
-
 Copy the _site directory over to production. Do not copy anything else over.
 
-Verify changes online and log out of production.
+Verify changes online and log out of production server

@@ -44,6 +44,11 @@
 	);
 
 
-// Bootstrap.
+// Bootstrap Overrides.
 $theme-primary: #F05F40;
 $theme-dark: #222;
+$custom-font-size: 20px;
+
+// Bootstrap Default Variables.
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";

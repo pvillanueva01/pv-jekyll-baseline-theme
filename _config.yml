@@ -28,12 +28,12 @@ google_analytics: #UA-15217512-5
 theme_settings:
 # Localization strings
   str_next: "Next"
-  str_prev: "Prev"
+  str_prev: "Previous"
   str_continue_reading: "Read more"    
 # Post navigation
   post_navigation: true
 
-# PAGINATION
+# Pagination
 paginate: 5
 paginate_path: "page:num"
 
@@ -53,8 +53,8 @@ sass:
 # PLUGINS
 plugins: 
  - jekyll-paginate
- - jekyll-minifier
- - jekyll-assets
+ - jekyll/minibundle
+ - jekyll-responsive-image
 
 # Do NOT INCLUDE inside _site folder
 exclude:
@@ -62,22 +62,25 @@ exclude:
  - yarn.lock
  - package.json
  - =3.0.0
+ - Gemfile
+ - Gemfile.lock
 
-# Settings for Jekyll Assets Plugin
-assets:
- compress:
-  css: false
-  js: true
- cache: default
- prefix: "/assets"
- digest: true 
- sources:
-  - _assets/scripts
-  - node_modules/bootstrap/dist/js
-  - node_modules/jquery/dist
-  - node_modules/popper.js/dist
+# Minibundle
+minibundle:
+ minifier_commands:
+  js: node_modules/.bin/uglifyjs
 
-# Minifify JS files
-jekyll-minifier:
- compress_javascript: true
-
+# Responsive Images
+responsive_image:
+ template: _includes/responsive-image.html
+ default_quality: 75
+ sizes:
+  - width: 320 #for xs-mobile
+  - width: 640 # for mobile
+  - width: 800 # for iPad 
+  - width: 1024 # for min desktop
+  - width: 1280 # for 1280
+ base_path: images
+ output_path_format: images/resized/%{filename}-%{width}x%{height}.%{extension}
+ save_to_source: true
+ cache: false

@@ -1,13 +1,21 @@
 ---
-layout: page
+layout: default
 ---
 {{content}}
 <section id="portfolio" class="no-padding">
     <div class="container-fluid">
+        {% responsive_image_block %}
+            path: {{ page.portfolio-img-1 }}
+            alt: {{ page.portfolio-img-alt }}                        
+        {% endresponsive_image_block %}
+        
         <div class="row no-gutter">
             <div class="col-sm-4">
                 <div class="portfolio-box">
-                     <img src="{{ page.portfolio-img-1 }}" class="img-responsive" alt="{{ page.portfolio-img-alt }}">
+                     {% responsive_image_block %}
+                        path: {{ page.portfolio-img-1 }}
+                        alt: {{ page.portfolio-img-alt }}                        
+                    {% endresponsive_image_block %}
                 </div>
             </div>
             <div class="col-sm-4">
