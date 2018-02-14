@@ -32,11 +32,21 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 - include overrides in libs/_vars.scss
 
 
+## Add Font-awesome into project
+
+https://fontawesome.com/get-started
+
+- Download from site, add to list of scripts to be minified
+- current version: 5.0.6
+
+
 ## Asset Building
 
 https://github.com/tkareine/jekyll-minibundle
 
 - yarn add uglify-js (to include in node_modules)
+
+- For js assets to minify as a bundle, they need to be in same directory
 
 
 ## Theme includes breadcrumbs
