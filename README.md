@@ -1,7 +1,7 @@
 # Baseline Theme for Jekyll sites
 
 - Bootstrap 4 Source code
-- Material design Source code
+
 
 ## Dependencies
 

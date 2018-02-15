@@ -2,7 +2,7 @@
 title: My Jekyll Project 
 subtitle: Jekyll custom theme
 email: pvillanueva01@gmail.com
-meta_description: Baseline Jekyll theme for site development - bootstrap-material design- 
+meta_description: Baseline Jekyll theme for site development - bootstrap 
 meta_keywords: "jekyll, themes" 
 baseurl: "/pv-baseline" # the subpath of your site, e.g. /blog/ 
 url: "" # the base hostname & protocol for your site

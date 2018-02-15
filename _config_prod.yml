@@ -2,7 +2,7 @@
 title: My Jekyll Project 
 subtitle: Jekyll custom theme
 email: pvillanueva01@gmail.com
-meta_description: Baseline Jekyll theme for site development - bootstrap-material design- 
+meta_description: Baseline Jekyll theme for site development - bootstrap
 meta_keywords: "jekyll, themes" 
 baseurl: "/pv-baseline" # the subpath of your site, e.g. /blog/
 url: "https://website.name" # the base hostname & protocol for your site
@@ -61,11 +61,14 @@ plugins:
 exclude:
  - node_modules
  - yarn.lock
+ - yarn-error.log
  - package.json
  - =3.0.0
  - Gemfile
  - Gemfile.lock
- - font-awesome
+ - font-awesome/scss
+ - LICENCE
+ - README.md
 
 # Minibundle
 minibundle:
