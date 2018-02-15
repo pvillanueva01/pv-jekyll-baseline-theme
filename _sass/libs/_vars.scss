@@ -1,57 +1,96 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,600i|Source+Sans+Pro:400,400i,600,600i,700,700i');
 
-
-// Misc.
-	$misc: (
-		z-index-base:		10000
-	);
-
 // Duration.
-	$duration: (
-		menu:				0.35s,
-		transition:			0.2s,
-		banner:				2.5s
-	);
+//	$duration: (
+//		menu:				0.35s,		
+//		banner:				2.5s
+//	);
 
-// Size.
-	$size: (
-		border-radius:		4px,
-		element-height:		2.75em,
-		element-margin:		1.5em,
-		inner:				65em
-	);
+//Custom Sizes, Margins, Paddings
+$padding-lg: 					3.25rem;
+$padding-sm:					1.25rem;
+$z-index-base:					10000;
 
-// Font.
-	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		600,
-		letter-spacing:		0.025em,
-		letter-spacing-alt:	0.25em
-	);
-
-// Palette.
-	$palette: (
-		bg:					#ffffff,
-		base:				#ffffff,
-		fg-light:			rgba(244,244,255,0.2),
-		border:				rgba(212,212,255,0.1),
-		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#f47321,
-		accent1:			#f05f40,
-		bg-footer:			#6C7A89,
-		text:				#333333,
-		mobile-nav-bg:		#212121,
-		element-bg:			#f3f3f3
-	);
-
+//Custom Colors
+$um-orange:						#f17430;
+$lynch: 						#4f5b65;
+$lynch-dark: 					#343d45;
+$lib-red: 						#bf4739;
+$feature-light: 				#f1f4fc;
+$gray-mid:						#333333;
+$accent1:						#f05f40; //dark orange
 
 // Bootstrap Overrides.
-$theme-primary: #F05F40;
-$theme-dark: #222;
-$custom-font-size: 20px;
+// -------------------------
+
+// Base Colors
+$orange: 						#ff9f55;
+$blue: 							#21759b;
+$gray-300: 						#dee2e6;
+
+// Theme Colors
+$primary:       				$orange;
+$light:							$feature-light;
+$dark:							$lynch-dark;
+
+// Body
+$body-color: 					$gray-mid;
+
+// Links
+$link-color: 					$blue;
+$link-decoration:           	none;
+$link-hover-color:          	darken($link-color, 15%);
+$link-hover-decoration:     	underline;
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$spacer: 1rem;
+
+// Fonts
+$font-family-sans-serif: 		"Source Sans Pro", Helvetica, sans-serif;
+$font-family-alt:				"Montserrat", Helvetica, sans-serif;
+$font-family-monospace: 		SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-size-base:              	1.125rem; // Assumes the browser default, typically 16px - set to 18
+$font-size-lg:                	($font-size-base * 3);	//48px
+$font-size-sm:                	($font-size-base * .875); //14px
+$font-size-mini:				($font-size-base * .75); //12px	
+
+$font-weight-light:         	300;
+$font-weight-normal:        	400;
+$font-weight-bold:          	700;
+$font-weight-semi:				600;
+
+$h1-font-size:                	$font-size-base * 2.625; //42px
+$h2-font-size:                	$font-size-base * 2;	//32px
+$h3-font-size:                	$font-size-base * 1.5;	//24px
+$h4-font-size:                	$font-size-base * 1.25;	//20px
+$h5-font-size:                	$font-size-base * 1.125; //18px
+$h6-font-size:                	$font-size-base;
+
+$headings-margin-bottom:      	$spacer;
+$headings-font-weight:        	600;
+$headings-line-height:        	1.5;
+
+// Components
+$line-height-lg:              	1.5;
+$line-height-sm:              	1.2;
+
+$border-width:                	1px;
+$border-color:                	$gray-300;
+
+$border-radius:               	.25rem;
+$border-radius-lg:            	3rem;
+$border-radius-circle:        	50%;
+
 
 // Bootstrap Default Variables.
 @import "../node_modules/bootstrap/scss/functions";

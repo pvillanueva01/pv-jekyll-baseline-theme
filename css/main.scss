@@ -2,8 +2,8 @@
 ---
 
 @import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
+//@import 'libs/functions';
+//@import 'libs/mixins';
 
 //Bootstrap 4
 @import 'bootstrap/scss/bootstrap';
@@ -16,23 +16,23 @@
 
 // Base
 
-@import 'base/base';
+//@import 'base/base';
 
 // Component
 
-@import 'components/section';
-@import 'components/button';
-@import 'components/highlight';
-@import 'components/icon';
-@import 'components/list';
-@import 'components/hero';
-@import 'components/staff';
+//@import 'components/section';
+//@import 'components/button';
+//@import 'components/highlight';
+//@import 'components/icon';
+//@import 'components/list';
+//@import 'components/hero';
+//@import 'components/staff';
 
 
 //Layout
 
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/posts';
+//@import 'layout/navigation';
+//@import 'layout/header';
+//@import 'layout/footer';
+//@import 'layout/posts';
 
