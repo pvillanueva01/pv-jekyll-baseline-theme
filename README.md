@@ -1,8 +1,5 @@
 # Baseline Theme for Jekyll sites
 
-- Bootstrap 4 Source code
-
-
 ## Dependencies
 
 - Homebrew 1.5.3 (https://brew.sh/) | brew update  brew -v
@@ -30,6 +27,10 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 ### Import Bootstrap SCSS files into main.scss
 
 - include overrides in libs/_vars.scss
+
+### Theme uses autoprefixer support for css
+
+https://github.com/vwochnik/jekyll-autoprefixer
 
 
 ## Add Font-awesome into project
