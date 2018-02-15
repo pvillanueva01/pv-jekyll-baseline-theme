@@ -27,7 +27,7 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 - Adding new SASS load paths in config
 
 
-## Import Bootstrap SCSS files into main.scss
+### Import Bootstrap SCSS files into main.scss
 
 - include overrides in libs/_vars.scss
 
@@ -36,8 +36,12 @@ https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 
 https://fontawesome.com/get-started
 
-- Download from site, add to list of scripts to be minified
 - current version: 5.0.6
+- Download from site
+
+a. add to list of scripts to be minified (large file size)
+b. add path in config, import into main.scss
+c. include overrides in libs/_vars.scss 
 
 
 ## Asset Building

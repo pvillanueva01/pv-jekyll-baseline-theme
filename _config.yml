@@ -48,6 +48,7 @@ sass:
  load_paths:
   - _sass
   - node_modules
+  - font-awesome
  style: compressed
 
 # PLUGINS
@@ -60,10 +61,14 @@ plugins:
 exclude:
  - node_modules
  - yarn.lock
+ - yarn-error.log
  - package.json
  - =3.0.0
  - Gemfile
  - Gemfile.lock
+ - font-awesome/scss
+ - LICENCE
+ - README.md
 
 # Minibundle
 minibundle:

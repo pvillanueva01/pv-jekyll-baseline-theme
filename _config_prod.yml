@@ -48,6 +48,7 @@ sass:
  load_paths:
   - _sass
   - node_modules
+  - font-awesome
  style: compressed
 
 # PLUGINS
@@ -64,6 +65,7 @@ exclude:
  - =3.0.0
  - Gemfile
  - Gemfile.lock
+ - font-awesome
 
 # Minibundle
 minibundle:
