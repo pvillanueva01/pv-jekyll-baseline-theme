@@ -67,7 +67,10 @@ https://github.com/wildlyinaccurate/jekyll-responsive-image
 
 - Be sure to include imagemagick first: 
 
+check version:  convert -version
+
 brew install imagemagick@6
+
 brew link imagemagick@6 --force
 
 - Set templates on _includes folder
