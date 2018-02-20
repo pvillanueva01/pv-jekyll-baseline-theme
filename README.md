@@ -5,9 +5,9 @@
 - Homebrew 1.5.3 (https://brew.sh/) | brew update  brew -v
 - Ruby 2.5.0 (https://www.ruby-lang.org/en/downloads/) | ruby -v
 - Ruby Gems 2.7.5 (https://rubygems.org/pages/download) | gem -v
-- Bundler 1.16.0 | bundle update  bundle -v
+- Bundler 1.16.1 | bundle update  bundle -v
 - NPM 5.6.0 (https://docs.npmjs.com/cli/update) | npm -v   npm update -g
-- Node 9.5.0 (https://nodejs.org/) | node -v
+- Node 8.9.4 (https://nodejs.org/) | node -v
 - Jekyll 3.7.2 | jekyll --version
 - Yarn 1.3.2 (https://yarnpkg.com/lang/en/docs/install/) | yarn --version
 
