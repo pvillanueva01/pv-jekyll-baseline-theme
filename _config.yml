@@ -33,10 +33,6 @@ theme_settings:
 # Post navigation
   post_navigation: true
 
-# Pagination
-paginate: 5
-paginate_path: "page:num"
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -90,3 +86,7 @@ responsive_image:
  output_path_format: images/resized/%{filename}-%{width}x%{height}.%{extension}
  save_to_source: true
  cache: false
+
+# Pagination
+paginate: 5
+paginate_path: "page:num"

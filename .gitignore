@@ -2,4 +2,5 @@ _site/
 .sass-cache/
 .idea/
 pv-baseline.iml
-yarn-error.logo
+yarn-error.log
+node_modules
