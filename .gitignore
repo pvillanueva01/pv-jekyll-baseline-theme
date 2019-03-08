@@ -3,3 +3,4 @@ _site/
 .idea/
 pv-baseline.iml
 yarn-error.log
+node_modules
